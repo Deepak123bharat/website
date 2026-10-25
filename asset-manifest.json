@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/website/static/css/main.f642c4fd.css",
-    "main.js": "/website/static/js/main.b79b1d5d.js",
-    "static/media/about04.png": "/website/static/media/about04.fa7b3a72ed32b0e25bfb.png",
-    "static/media/about02.png": "/website/static/media/about02.7a3df03410ee756268ec.png",
-    "static/media/about01.png": "/website/static/media/about01.080509de05322b7aafda.png",
-    "static/media/bgIMG.png": "/website/static/media/bgIMG.c39101e520e2997fc6d4.png",
-    "static/media/bgWhite.png": "/website/static/media/bgWhite.79658cadae50b3b16ee5.png",
-    "static/media/profile.png": "/website/static/media/profile.6bf7f6cb97c7784579e5.png",
-    "static/media/lua-gl.png": "/website/static/media/lua-gl.a67c3f9aa8a38bee95d1.png",
-    "static/media/open-source.jpg": "/website/static/media/open-source.de9ff3ad16eb6849f54c.jpg",
-    "static/media/logo.png": "/website/static/media/logo.e99031332328f3d0a5c6.png",
-    "static/media/luarocks.png": "/website/static/media/luarocks.4e9bae4a7ea6d64d0d5b.png",
-    "static/media/resume.png": "/website/static/media/resume.e4b7a7c9033856f76038.png",
-    "static/media/mobile.png": "/website/static/media/mobile.145d9ce0157a56f8fcd8.png",
-    "static/media/email.png": "/website/static/media/email.37b9e890eea501421fbf.png",
-    "static/media/manual-returns-sample.svg": "/website/static/media/manual-returns-sample.9cd9bef3334fa311caa4def68f1f8943.svg",
-    "index.html": "/website/index.html",
-    "static/media/circle.svg": "/website/static/media/circle.ae5f84b3853b9e34aa83cf8dada715c5.svg",
-    "main.f642c4fd.css.map": "/website/static/css/main.f642c4fd.css.map",
-    "main.b79b1d5d.js.map": "/website/static/js/main.b79b1d5d.js.map"
+    "main.css": "/static/css/main.b96fd751.css",
+    "main.js": "/static/js/main.cc2ac3ae.js",
+    "static/media/about04.png": "/static/media/about04.fa7b3a72ed32b0e25bfb.png",
+    "static/media/about02.png": "/static/media/about02.7a3df03410ee756268ec.png",
+    "static/media/about01.png": "/static/media/about01.080509de05322b7aafda.png",
+    "static/media/bgIMG.png": "/static/media/bgIMG.c39101e520e2997fc6d4.png",
+    "static/media/bgWhite.png": "/static/media/bgWhite.79658cadae50b3b16ee5.png",
+    "static/media/profile.png": "/static/media/profile.6bf7f6cb97c7784579e5.png",
+    "static/media/lua-gl.png": "/static/media/lua-gl.a67c3f9aa8a38bee95d1.png",
+    "static/media/open-source.jpg": "/static/media/open-source.de9ff3ad16eb6849f54c.jpg",
+    "static/media/logo.png": "/static/media/logo.e99031332328f3d0a5c6.png",
+    "static/media/luarocks.png": "/static/media/luarocks.4e9bae4a7ea6d64d0d5b.png",
+    "static/media/resume.png": "/static/media/resume.e4b7a7c9033856f76038.png",
+    "static/media/mobile.png": "/static/media/mobile.145d9ce0157a56f8fcd8.png",
+    "static/media/email.png": "/static/media/email.37b9e890eea501421fbf.png",
+    "static/media/manual-returns-sample.svg": "/static/media/manual-returns-sample.9cd9bef3334fa311caa4def68f1f8943.svg",
+    "index.html": "/index.html",
+    "static/media/circle.svg": "/static/media/circle.ae5f84b3853b9e34aa83cf8dada715c5.svg",
+    "main.b96fd751.css.map": "/static/css/main.b96fd751.css.map",
+    "main.cc2ac3ae.js.map": "/static/js/main.cc2ac3ae.js.map"
   },
   "entrypoints": [
-    "static/css/main.f642c4fd.css",
-    "static/js/main.b79b1d5d.js"
+    "static/css/main.b96fd751.css",
+    "static/js/main.cc2ac3ae.js"
   ]
 }

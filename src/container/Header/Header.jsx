@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 
 import { AppWrap } from "../../wrapper";
 import { images, profile } from "../../constants";
+import PortraitParticles from "./PortraitParticles";
 import "./Header.scss";
 
 const ProofItem = ({ value, label, href }) => {
@@ -75,20 +76,14 @@ const Header = () => (
       </div>
     </div>
 
-    <motion.div
-      whileInView={{ opacity: [0, 1] }}
-      transition={{ duration: 0.5, delayChildren: 0.5 }}
-      className="app__header-img"
-    >
-      <img src={images.profile} alt={profile.name} className="app__header-photo" />
-      <motion.img
-        whileInView={{ scale: [0, 1] }}
-        transition={{ duration: 1, ease: "easeInOut" }}
+    <div className="app__header-img">
+      <PortraitParticles />
+      <img
         src={images.circle}
         alt=""
         className="overlay_circle"
       />
-    </motion.div>
+    </div>
 
     <motion.div
       variants={scaleVariants}

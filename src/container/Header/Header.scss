@@ -1,5 +1,6 @@
 #home {
   position: relative;
+  clip-path: inset(0);
   background: url("../../assets/bgIMG.png");
   background-size: cover;
   background-position: center;
@@ -325,6 +326,21 @@
   align-items: flex-end;
   position: relative;
 
+  .app__portrait-particles {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 2;
+    transition: opacity 0.45s ease;
+
+    &[data-space="viewport"] {
+      position: fixed;
+      z-index: 100;
+    }
+  }
+
   img {
     width: 100%;
     object-fit: contain;
@@ -334,6 +350,7 @@
   // Row layout: as tall as the screen allows below the navbar (the 7rem covers
   // the top padding plus a little air). Stacked layout: as wide as the screen.
   .app__header-photo {
+    transition: opacity 0.45s ease;
     width: auto;
     height: calc(100vh - 7rem);
     height: calc(100dvh - 7rem);
@@ -364,6 +381,17 @@
 
   @media screen and (max-width: 900px) {
     margin: 2rem 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .app__header-img .app__header-photo {
+    opacity: 1 !important;
+    transition: none;
+  }
+
+  .app__portrait-particles {
+    display: none;
   }
 }
 

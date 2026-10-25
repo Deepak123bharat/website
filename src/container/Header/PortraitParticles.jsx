@@ -261,7 +261,7 @@ const PortraitParticles = () => {
         className="app__portrait-particles"
         data-phase={phase}
         data-space={phase === "complete" ? "portrait" : "viewport"}
-        style={{ opacity: showPhoto ? 0 : 1 }}
+        style={{ opacity: showPhoto || phase === "pending" ? 0 : 1 }}
       />
     </>
   );

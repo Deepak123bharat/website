@@ -1,0 +1,79 @@
+.app__skills {
+  flex: 1;
+  width: 100%;
+  flex-direction: column;
+}
+
+.app__skills-groups {
+  width: 100%;
+  max-width: 1100px;
+  margin-top: 3rem;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+  gap: 1.5rem;
+
+  @media screen and (min-width: 2000px) {
+    max-width: 1800px;
+  }
+}
+
+.app__skills-group {
+  padding: 1.5rem;
+  border-radius: 15px;
+  background-color: var(--primary-color);
+
+  @media screen and (max-width: 450px) {
+    padding: 1.25rem 1rem;
+  }
+}
+
+.app__skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+.app__skills-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  background-color: var(--surface-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease-in-out;
+
+  svg {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    color: var(--icon-light);
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+
+  @media screen and (min-width: 2000px) {
+    padding: 0.8rem 1.5rem;
+
+    svg {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
+
+[data-theme="dark"] .app__skills-item svg {
+  color: var(--icon-dark);
+}
+
+// Scoped so it wins over the global .p-text rule in App.scss.
+.app__skills .app__skills-item p {
+  font-weight: 500;
+  color: var(--black-color);
+}

@@ -1,0 +1,161 @@
+.app__footer {
+  flex: 1;
+  width: 100%;
+  flex-direction: column;
+}
+
+// Hidden, not removed, so the column keeps its width and the content stays centered.
+#contact .app__social {
+  visibility: hidden;
+}
+
+.app__footer-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.app__footer-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  border: 2px solid var(--secondary-color);
+  background-color: var(--secondary-color);
+
+  font-family: var(--font-base);
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--on-accent-color);
+  text-decoration: none;
+
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  &:hover {
+    background-color: var(--secondary-hover-color);
+    border-color: var(--secondary-hover-color);
+  }
+
+  @media screen and (min-width: 2000px) {
+    padding: 1.5rem 3rem;
+    font-size: 1.75rem;
+
+    svg {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
+
+.app__footer-btn--ghost {
+  background-color: transparent;
+  color: var(--secondary-color);
+
+  &:hover {
+    background-color: var(--primary-color);
+    border-color: var(--secondary-color);
+  }
+}
+
+.app__footer-cards {
+  width: 100%;
+  max-width: 1000px;
+  margin: 3rem 0 1rem;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
+  gap: 1rem;
+
+  .app__footer-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.9rem;
+
+    padding: 1rem 1.25rem;
+    border-radius: 10px;
+    background-color: var(--card-pink-color);
+    text-decoration: none;
+    min-width: 0;
+
+    transition: all 0.3s ease-in-out;
+
+    img {
+      width: 40px;
+      height: 40px;
+      flex-shrink: 0;
+    }
+
+    div {
+      min-width: 0;
+    }
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
+    }
+  }
+
+  .app__footer-card:nth-child(2) {
+    background-color: var(--card-blue-color);
+  }
+
+  .app__footer-card:nth-child(3) {
+    background-color: var(--primary-color);
+  }
+}
+
+// Scoped so these win over the global .p-text rule in App.scss.
+.app__footer {
+  // Auto margins split the free space: the contact content stays centered and
+  // the copyright sits at the bottom of the section.
+  > .head-text,
+  > .copyright {
+    margin-top: auto;
+  }
+
+  .app__footer-intro {
+    max-width: 600px;
+    margin-top: 1rem;
+    font-size: 1rem;
+    text-align: center;
+
+    @media screen and (min-width: 2000px) {
+      max-width: 1100px;
+      font-size: 1.75rem;
+    }
+  }
+
+  .app__footer-card-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 2000px) {
+      font-size: 1.3rem;
+    }
+  }
+
+  .app__footer-card-value {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--black-color);
+    overflow-wrap: anywhere;
+
+    @media screen and (min-width: 2000px) {
+      font-size: 1.75rem;
+    }
+  }
+}

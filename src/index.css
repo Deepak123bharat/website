@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+:root {
+  --font-base: "DM Sans", sans-serif;
+
+  --primary-color: #edf2f8;
+  --secondary-color: #313bac;
+  --secondary-hover-color: #2430af;
+  --black-color: #030303;
+  --lightGray-color: #e4e4e4;
+  --gray-color: #6b7688;
+  --brown-color: #46364a;
+  --white-color: #ffffff;
+
+  /* Theme-aware tokens; dark values are set under [data-theme="dark"]. */
+  --surface-color: #ffffff; /* cards and white sections */
+  --on-accent-color: #ffffff; /* text and icons on --secondary-color */
+  --dot-color: #cbcbcb;
+  --card-pink-color: #fef4f5;
+  --card-blue-color: #f2f7fb;
+  --navbar-bg: rgba(255, 255, 255, 0.25);
+  --navbar-border: rgba(255, 255, 255, 0.18);
+  --icon-filter: none; /* for the black PNG icons */
+  --icon-blend: multiply;
+  --logo-filter: none;
+
+  color-scheme: light;
+}
+
+[data-theme="dark"] {
+  --primary-color: #0f172a;
+  --secondary-color: #818cf8;
+  --secondary-hover-color: #a5b4fc;
+  --black-color: #e2e8f0;
+  --lightGray-color: #334155;
+  --gray-color: #94a3b8;
+
+  --surface-color: #1e293b;
+  --on-accent-color: #0f172a;
+  --dot-color: #475569;
+  --card-pink-color: #2a2235;
+  --card-blue-color: #172338;
+  --navbar-bg: rgba(15, 23, 42, 0.75);
+  --navbar-border: rgba(148, 163, 184, 0.12);
+  --icon-filter: invert(1);
+  --icon-blend: screen;
+  --logo-filter: brightness(0) invert(1);
+
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--primary-color);
+}

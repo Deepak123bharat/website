@@ -1,0 +1,51 @@
+.app__about {
+  flex: 1;
+  width: 100%;
+  flex-direction: column;
+}
+
+// Scoped under .app__about so it wins over the global .p-text rules in App.scss.
+.app__about .app__about-summary {
+  max-width: 760px;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  text-align: center;
+
+  @media screen and (min-width: 2000px) {
+    max-width: 1400px;
+    font-size: 1.75rem;
+  }
+}
+
+.app__profiles {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.app__profile-item {
+  width: 190px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 2rem;
+
+  img {
+    width: 100%;
+    height: 170px;
+    border-radius: 15px;
+    object-fit: cover;
+  }
+
+  @media screen and (min-width: 2000px) {
+    width: 370px;
+    margin: 2rem 4rem;
+
+    img {
+      height: 320px;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+# Deepak Rathore
+
+> Personal portfolio of Deepak Rathore, a senior full-stack software engineer with 6 years of experience building web applications and APIs in Go, Node.js, TypeScript, React/Next.js, and PostgreSQL.
+
+The canonical website is https://www.deepakrathore.online/. It is a single-page portfolio; the links below identify sections of that page, not separate pages.
+
+Deepak's work includes commerce, returns, logistics, and supply-chain software, Shopify Admin GraphQL API integrations, and webhooks. The portfolio includes professional case studies, open-source contributions, work experience, skills, and contact information.
+
+## Portfolio
+
+- [About](https://www.deepakrathore.online/#about): Background and engineering experience.
+- [Featured work](https://www.deepakrathore.online/#featured): Case studies covering manual returns, explainable return-risk scoring, carrier-aware delivery management, Roslyn contributions, and retailer and nonprofit dashboards.
+- [Experience](https://www.deepakrathore.online/#experience): Professional roles and responsibilities.
+- [Skills](https://www.deepakrathore.online/#skills): Languages, frontend, backend, databases, cloud platforms, and development tools.
+- [Open-source projects](https://www.deepakrathore.online/#work): Lua-GL and LuaRocks Google Summer of Code projects.
+- [Contact](https://www.deepakrathore.online/#contact): Email and professional profiles.
+
+## Professional Profiles
+
+- [GitHub](https://github.com/Deepak123bharat): Public repositories and projects.
+- [LinkedIn](https://www.linkedin.com/in/deepak-singh-rathore-a100aa181/): Professional profile.
+- [Merged Roslyn contributions](https://github.com/dotnet/roslyn/pulls?q=is%3Apr+author%3Adeepakrathore33+is%3Amerged): Contributions to the .NET compiler and C# developer tooling.
+
+## Contact
+
+- [Email Deepak](mailto:dsrdeepak8@gmail.com)

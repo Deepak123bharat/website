@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import { HiOutlineMoon, HiOutlineSun } from "react-icons/hi";
 
 // public/index.html sets data-theme before React loads (saved choice, else
-// dark), so the page never flashes the wrong theme.
+// dark), so the page never flashes the wrong theme. The build prerenders with
+// no document, where the site's default (dark) applies.
 const currentTheme = () =>
+  typeof document === "undefined" ||
   document.documentElement.getAttribute("data-theme") === "dark"
     ? "dark"
     : "light";

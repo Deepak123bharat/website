@@ -23,9 +23,9 @@ const About = () => (
           key={about.title}
         >
           <img src={about.image} alt={about.title} />
-          <h2 className="bold-text" style={{ marginTop: 20 }}>
+          <h3 className="bold-text" style={{ marginTop: 20 }}>
             {about.title}
-          </h2>
+          </h3>
           <p className="p-text" style={{ marginTop: 10 }}>
             {about.description}
           </p>

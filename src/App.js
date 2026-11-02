@@ -7,13 +7,15 @@ import "./App.scss";
 const App = () => (
   <div className="app">
     <Navbar />
-    <Header />
-    <About />
-    <Featured />
-    <Experience />
-    <Skills />
-    <Work />
-    <Footer />
+    <main>
+      <Header />
+      <About />
+      <Featured />
+      <Experience />
+      <Skills />
+      <Work />
+      <Footer />
+    </main>
   </div>
 );
 

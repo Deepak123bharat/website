@@ -18,7 +18,7 @@ const Work = () => {
           const TileIcon = work.icon;
 
           return (
-            <div className="app__work-item app__flex" key={work.title}>
+            <article className="app__work-item app__flex" key={work.title}>
               <div className="app__work-img app__flex">
                 {work.image ? (
                   <img src={work.image} alt={work.title} />
@@ -80,7 +80,7 @@ const Work = () => {
               </div>
 
               <div className="app__work-content app__flex">
-                <h4 className="bold-text">{work.title}</h4>
+                <h3 className="bold-text">{work.title}</h3>
                 <p className="p-text" style={{ marginTop: 10 }}>
                   {work.description}
                 </p>
@@ -102,7 +102,7 @@ const Work = () => {
                   <p className="p-text">{work.tags[0]}</p>
                 </div>
               </div>
-            </div>
+            </article>
           );
         })}
       </div>

@@ -19,6 +19,8 @@
   <meta property="og:url" content="https://www.deepakrathore.online/" />
   <meta property="og:image" content="https://www.deepakrathore.online/deepak.jpg" />
   <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="460" />
+  <meta property="og:image:height" content="460" />
   <meta property="og:image:alt" content="Photo of Deepak Rathore" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Deepak Rathore | Senior Software Engineer" />
@@ -26,9 +28,13 @@
     content="Full-stack engineer building web apps and APIs in Go, Node.js, TypeScript, React/Next.js, and PostgreSQL." />
   <meta name="twitter:image" content="https://www.deepakrathore.online/deepak.jpg" />
   <meta name="twitter:image:alt" content="Photo of Deepak Rathore" />
-  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo.png" />
-  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/deepak.jpg" />
   <title>Deepak Rathore | Senior Software Engineer</title>
+  <style>
+    /* The build prerenders the page into #root for crawlers; React replaces it on load. */
+    #root[data-prerendered] { visibility: hidden; }
+  </style>
+  <noscript><style>#root[data-prerendered] { visibility: visible; }</style></noscript>
   <script>
     // Apply the theme before first paint: the visitor's saved choice, else dark.
     (function () {
@@ -42,7 +48,6 @@
 </head>
 
 <body>
-  <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
 </body>
 

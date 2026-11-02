@@ -33,7 +33,7 @@ const Experience = () => (
 
     <div className="app__exp-timeline">
       {experiences.map((exp) => (
-        <motion.div
+        <motion.article
           whileInView={{ opacity: [0, 1] }}
           transition={{ duration: 0.5 }}
           className="app__exp-item"
@@ -79,7 +79,7 @@ const Experience = () => (
               ))}
             </div>
           </div>
-        </motion.div>
+        </motion.article>
       ))}
     </div>
 

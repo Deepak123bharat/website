@@ -116,6 +116,31 @@
     }
   }
 
+  // The outcome of a point, set apart from the description above it.
+  .app__exp-result {
+    display: block;
+    margin-top: 0.45rem;
+    padding: 0.4rem 0.75rem;
+    border-left: 3px solid var(--secondary-color);
+    border-radius: 0 8px 8px 0;
+    background-color: var(--primary-color);
+    font-weight: 600;
+    color: var(--black-color);
+
+    strong {
+      margin-right: 0.35rem;
+      font-size: 0.7rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--secondary-color);
+
+      @media screen and (min-width: 2000px) {
+        font-size: 1.3rem;
+      }
+    }
+  }
+
   .app__exp-tech {
     display: flex;
     flex-wrap: wrap;

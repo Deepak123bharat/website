@@ -1,13 +1,12 @@
 import React from "react";
-import { BsLinkedin, BsGithub } from "react-icons/bs";
-import { GrResume } from "react-icons/gr";
+import { BsLinkedin, BsGithub, BsFileEarmarkPerson } from "react-icons/bs";
 
 import { profile } from "../constants";
 
 const links = [
   { href: profile.linkedin, label: "LinkedIn", Icon: BsLinkedin },
   { href: profile.github, label: "GitHub", Icon: BsGithub },
-  { href: profile.resume, label: "Resume", Icon: GrResume },
+  { href: profile.resume, label: "Resume", Icon: BsFileEarmarkPerson },
 ];
 
 const SocialMedia = () => (

@@ -62,11 +62,20 @@ const Experience = () => (
               </p>
             )}
             <ul>
-              {exp.points.map((point) => (
-                <li className="p-text" key={point}>
-                  {point}
-                </li>
-              ))}
+              {exp.points.map((point) => {
+                const { text, result } =
+                  typeof point === "string" ? { text: point } : point;
+                return (
+                  <li className="p-text" key={text}>
+                    {text}
+                    {result && (
+                      <span className="app__exp-result">
+                        <strong>Result</strong> {result}
+                      </span>
+                    )}
+                  </li>
+                );
+              })}
             </ul>
             {exp.links?.map((link) => (
               <ExtLink className="app__exp-link" href={link.href} key={link.href}>

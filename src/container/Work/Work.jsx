@@ -16,6 +16,11 @@ const Work = () => {
       <div className="app__work-portfolio">
         {projects.map((work) => {
           const TileIcon = work.icon;
+          const codeHref = work.contributionLink || work.codeLink;
+          const codeLabel = work.contributionLink ? "Merged PRs" : "Code";
+          const codeAriaLabel = work.contributionLink
+            ? `Merged pull requests for ${work.title}`
+            : `Source code for ${work.title}`;
 
           return (
             <article className="app__work-item app__flex" key={work.title}>
@@ -59,12 +64,12 @@ const Work = () => {
                       </motion.div>
                     </a>
                   )}
-                  {work.codeLink && (
+                  {codeHref && (
                     <a
-                      href={work.codeLink}
+                      href={codeHref}
                       target="_blank"
                       rel="noreferrer"
-                      aria-label={`Source code for ${work.title}`}
+                      aria-label={codeAriaLabel}
                     >
                       <motion.div
                         whileInView={{ scale: [0, 1] }}
@@ -91,9 +96,14 @@ const Work = () => {
                       <AiFillEye /> Visit
                     </a>
                   )}
-                  {work.codeLink && (
-                    <a href={work.codeLink} target="_blank" rel="noreferrer">
-                      <AiFillGithub /> Code
+                  {codeHref && (
+                    <a
+                      href={codeHref}
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label={codeAriaLabel}
+                    >
+                      <AiFillGithub aria-hidden="true" /> {codeLabel}
                     </a>
                   )}
                 </div>

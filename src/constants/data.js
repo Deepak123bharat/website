@@ -17,6 +17,7 @@ import {
   SiJavascript,
   SiJenkins,
   SiJira,
+  SiKubernetes,
   SiLua,
   SiMicrosoftsqlserver,
   SiMongodb,
@@ -38,6 +39,8 @@ import images from "./images";
 
 const referenceLetter =
   "https://drive.google.com/file/d/1wZiDDOlYdZQcWlxejVPmHOZ5rOklM9sa/view?usp=sharing";
+const roslynMergedPullRequests =
+  "https://github.com/dotnet/roslyn/pulls?q=is%3Apr+author%3Adeepakrathore33+is%3Amerged";
 
 export const profile = {
   name: "Deepak Rathore",
@@ -48,9 +51,9 @@ export const profile = {
   // Facts shown under the headline. An `href` makes the item a link.
   proof: [
     {
-      value: "13",
-      label: "merged PRs in Microsoft's open-source C# compiler",
-      href: "https://github.com/dotnet/roslyn/pulls?q=is%3Apr+author%3Adeepakrathore33+is%3Amerged",
+      value: "18+",
+      label: "merged PRs in Roslyn & Skyhook Radar",
+      href: "#work",
     },
     {
       value: "2",
@@ -60,7 +63,7 @@ export const profile = {
     { value: "6 yrs", label: "building full-stack products" },
   ],
   summary:
-    "Full-stack and AI developer with 6 years building web apps, APIs and integrations in TypeScript, Go, Python, Node.js, React/Next.js, and PostgreSQL. Built an MCP-based AI triage assistant for Microsoft's Roslyn team and explainable return-fraud scoring for a Shopify returns app, worked on GoKwik's Python RTO risk-score API, and contributed 13 merged PRs to Microsoft's open-source C# compiler. Experienced with webhook-driven integrations and automated testing.",
+    "Full-stack and AI developer with 6 years building web apps, APIs and integrations in TypeScript, Go, Python, Node.js, React/Next.js, and PostgreSQL. Built an MCP-based AI triage assistant for Microsoft's Roslyn team and explainable return-fraud scoring for a Shopify returns app, worked on GoKwik's Python RTO risk-score API, and contributed to Microsoft's open-source C# compiler Roslyn and the Kubernetes UI Skyhook Radar. Experienced with webhook-driven integrations and automated testing.",
   email: "dsrdeepak8@gmail.com",
   phone: "+91 7742798638",
   location: "Jaipur, Rajasthan, India",
@@ -103,7 +106,7 @@ export const abouts = [
   {
     title: "Open Source",
     description:
-      "Two-time Google Summer of Code intern with 13 merged PRs in Microsoft's open-source C# compiler.",
+      "Two-time Google Summer of Code intern and contributor to Microsoft's Roslyn C# compiler and the Kubernetes UI Skyhook Radar.",
     image: images.openSource,
   },
 ];
@@ -308,7 +311,7 @@ export const featuredWork = [
     label: "Open source · dotnet/roslyn",
     title: "Roslyn Contributions",
     tagline:
-      "13 merged pull requests to Microsoft's open-source C# compiler (Roslyn) and its IDE tooling, from crash fixes to .slnx support.",
+      "13+ merged pull requests to Microsoft's open-source C# compiler (Roslyn) and its IDE tooling, from crash fixes to .slnx support.",
     role: "Contributor. I diagnosed and fixed crashes and gaps in C# IDE features, and added .slnx support to MSBuildWorkspace.",
     problem:
       "People using the C# IDE hit crashes in refactorings and navigation features, and the library that loads solutions could not open the new .slnx (XML solution) format.",
@@ -333,12 +336,12 @@ export const featuredWork = [
       },
     ],
     shipped: [
-      "13 pull requests merged into dotnet/roslyn since 2024, reviewed and merged by the Roslyn team.",
+      "13+ pull requests merged into dotnet/roslyn since 2024, reviewed and merged by the Roslyn team.",
     ],
     proof: [
       {
         label: "All merged pull requests",
-        href: "https://github.com/dotnet/roslyn/pulls?q=is%3Apr+author%3Adeepakrathore33+is%3Amerged",
+        href: roslynMergedPullRequests,
       },
       {
         label: "#77326 .slnx support in MSBuildWorkspace",
@@ -652,6 +655,27 @@ export const skillGroups = [
 ];
 
 export const projects = [
+  {
+    title: "Microsoft Roslyn Contributions",
+    description:
+      "13+ merged pull requests in Microsoft's C# compiler and IDE tooling, including .slnx support and crash fixes.",
+    tags: ["C# / .NET"],
+    icon: SiDotnet,
+    accent: "#512BD4",
+    projectLink: "https://github.com/dotnet/roslyn",
+    contributionLink: roslynMergedPullRequests,
+  },
+  {
+    title: "Skyhook Radar Contributions",
+    description:
+      "5+ merged pull requests for the open-source Kubernetes UI, adding Multus pod network visibility and improving traffic-source selection.",
+    tags: ["Kubernetes"],
+    icon: SiKubernetes,
+    accent: "#326CE5",
+    projectLink: "https://github.com/skyhook-io/radar",
+    contributionLink:
+      "https://github.com/skyhook-io/radar/pulls?q=is%3Apr+is%3Amerged+author%3ADeepak123bharat",
+  },
   {
     title: "Lua-GL (GSoC 2019)",
     description:

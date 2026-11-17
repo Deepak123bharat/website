@@ -1,6 +1,6 @@
 // All portfolio content lives in this file. Edit it and redeploy to update the site.
 import { AiOutlineApi } from "react-icons/ai";
-import { BsChatSquareText, BsStars, BsTerminal } from "react-icons/bs";
+import { BsTerminal } from "react-icons/bs";
 import { FaCheckCircle, FaCubes, FaDatabase, FaJava, FaRobot } from "react-icons/fa";
 import {
   SiAngular,
@@ -23,6 +23,7 @@ import {
   SiMongodb,
   SiNextdotjs,
   SiNodedotjs,
+  SiOpenai,
   SiPostgresql,
   SiPrisma,
   SiPython,
@@ -127,7 +128,7 @@ export const featuredWork = [
       "A read-only MCP server in TypeScript with tools to query feedback items, read their comments, list and download attachments, and analyze crash dumps, exposing only allow-listed fields.",
       "A web UI where an engineer enters a feedback ID or runs a batch query and gets one summary: the report and comments, the likely area, duplicate candidates, related code and PRs, and diagnostics.",
       "A seven-step triage pipeline that runs heuristic checks, adds model-generated analysis when a language model is configured, and streams each step's progress to the UI.",
-      "A pluggable model layer that works with GitHub Models or with the Copilot models in VS Code, through a small localhost-only bridge extension.",
+      "A pluggable model layer that works with the OpenAI API or with the Copilot models in VS Code, through a small localhost-only bridge extension.",
       "A Copilot agent that chains the MCP tools into a structured report for the engineer, and a readiness score that shows how complete a report is, based on checks such as repro steps, comments, and attachments.",
     ],
     challenges: [
@@ -160,7 +161,7 @@ export const featuredWork = [
       "An internal tool, so there is no public link, code, or demo.",
     ],
     proof: [],
-    tech: ["MCP", "TypeScript", "LLM APIs", "Node.js", "Azure DevOps", "VS Code extension"],
+    tech: ["MCP", "TypeScript", "OpenAI API", "Node.js", "Azure DevOps", "VS Code extension"],
   },
   {
     id: "return-risk-score",
@@ -608,8 +609,7 @@ export const skillGroups = [
     title: "AI & LLM",
     items: [
       { name: "MCP", icon: AiOutlineApi, color: "var(--secondary-color)" },
-      { name: "LLM APIs", icon: BsStars, color: "var(--secondary-color)" },
-      { name: "Prompt design", icon: BsChatSquareText, color: "var(--secondary-color)" },
+      { name: "OpenAI API", icon: SiOpenai, color: "var(--black-color)" },
       { name: "AI agents", icon: FaRobot, color: "var(--secondary-color)" },
       { name: "Claude Code", icon: BsTerminal, color: "#D97757" },
     ],
